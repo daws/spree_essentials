@@ -84,11 +84,11 @@ miu = {
   },
   
   
-	markdownTitle: function(markItUp, char) {
-		heading = '';
+	markdownTitle: function(markItUp, ch) {
+		var heading = '';
 		n = $.trim(markItUp.selection||markItUp.placeHolder).length;
 		for(i = 0; i < n; i++) {
-			heading += char;
+			heading += ch;
 		}
 		return '\n'+heading;
 	}
